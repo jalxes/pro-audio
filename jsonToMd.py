@@ -8,4 +8,5 @@ data = json.loads(json_data)
 print('|name|description|')
 print('|---|---|')
 for x in data:
-    print('|[%s](%s)|%s|' % (x['Name'], x['Link'], x['Description']))
+    print('|[%s](%s) <small>[ArchLink](%s)</small>|%s|' %
+          (x['Name'], x['Link'], x['ArchLink'], x['Description']))

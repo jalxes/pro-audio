@@ -21,6 +21,7 @@ class BlogSpider(scrapy.Spider):
 
     def parse_package_page(self, response):
         td = response.meta['item']
+        td['ArchLink'] = response.url
         td['Link'] = response.xpath(
             '//td/a[@itemprop="url"]/text()').extract_first()
 
