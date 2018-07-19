@@ -1,4 +1,4 @@
-# [The List](./pacages.md)
+# [The List](./packages.md)
 
 ## Update list
 

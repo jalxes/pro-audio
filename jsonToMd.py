@@ -5,8 +5,8 @@ json_data = open('result.json').read()
 
 data = json.loads(json_data)
 
-print('|name|description|')
-print('|---|---|')
+print('|original link|name|description|')
+print('|---|---|---|')
 for x in data:
-    print('|[%s](%s) <small>[ArchLink](%s)</small>|%s|' %
-          (x['Name'], x['Link'], x['ArchLink'], x['Description']))
+    print('|[ArchLink](%s)|[%s](%s)|%s|' %
+          (x['ArchLink'], x['Name'], x['Link'], x['Description']))
